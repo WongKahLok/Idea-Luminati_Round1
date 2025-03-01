@@ -1,0 +1,100 @@
+// content.css - Styling for injected content
+.truthguard-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.truthguard-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.truthguard-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.truthguard-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 0;
+}
+
+.truthguard-content {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.truthguard-reasons {
+  margin: 10px 0;
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.truthguard-reasons li {
+  margin-bottom: 5px;
+}
+
+.truthguard-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.truthguard-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+
+.truthguard-primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.truthguard-secondary {
+  background-color: transparent;
+  color: #7f8c8d;
+  border: none;
+}
+
+.truthguard-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #95a5a6;
+  font-size: 16px;
+  cursor: pointer;
+}
