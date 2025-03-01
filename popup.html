@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TruthGuard - Fake News Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="images/logo.png" alt="TruthGuard Logo" class="logo">
+      <h1>TruthGuard</h1>
+    </div>
+    <div class="stats">
+      <p>Websites scanned: <span id="scanned-count">0</span></p>
+      <p>Alerts raised: <span id="alert-count">0</span></p>
+    </div>
+    <div class="controls">
+      <button id="scan-page">Scan This Page</button>
+      <label class="switch">
+        <input type="checkbox" id="auto-scan" checked>
+        <span class="slider round"></span>
+        <span class="label">Auto-scan pages</span>
+      </label>
+    </div>
+    <div class="info">
+      <h2>How it works</h2>
+      <p>TruthGuard analyzes news articles using NLP techniques and a database of verified information to detect potentially misleading content.</p>
+      <p>When suspicious content is found, an alert appears with links to verified sources.</p>
+    </div>
+    <div class="footer">
+      <p>Made for Hackathon 2025</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
